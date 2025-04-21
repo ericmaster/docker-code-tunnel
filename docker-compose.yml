@@ -1,0 +1,19 @@
+services:
+  vscode-tunnel:
+    container_name: code-tunnel
+    build:
+      context: .
+      dockerfile: Dockerfile
+    #store the data in the host (optional : uncomment the volumes section and change the path)
+    #volumes:
+    #  - /home/<USER>/appdata/my-code-server:/home/codeuser/
+    
+    #optional : add the network
+    # networks:
+    #   - vscode-server-network
+
+#optional : add the network 
+# networks:
+#   vscode-server-network:
+#     external: false
+#     name: vscode-server-network
