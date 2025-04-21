@@ -39,6 +39,6 @@ To grant access to the server, please log into https://github.com/login/device a
 
 - Login to https://github.com/login/device and use the provided code to authenticate and authorize.
 
-- Check the logs again `docker logs [container-name]` and get the web IDE tunnel link (e.g. `https://vscode.dev/tunnel/[container-name]`)
+- Check the logs again `docker logs [container-name]` and get the web IDE tunnel link (e.g. `https://vscode.dev/tunnel/[container-id]/home/codeuser/workspace`)
 
 - Enjoy!

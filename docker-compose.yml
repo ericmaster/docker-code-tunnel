@@ -4,16 +4,16 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    #store the data in the host (optional : uncomment the volumes section and change the path)
-    #volumes:
-    #  - /home/<USER>/appdata/my-code-server:/home/codeuser/
+    #optional : mount workspace in the host filesystem
+    volumes:
+     - ./workspace:/home/codeuser/workspace
     
     #optional : add the network
     # networks:
-    #   - vscode-server-network
+    #   - vscode-network
 
 #optional : add the network 
 # networks:
-#   vscode-server-network:
+#   vscode-network:
 #     external: false
-#     name: vscode-server-network
+#     name: vscode-network

@@ -24,7 +24,7 @@ USER codeuser
 ENV HOME=/home/codeuser
 
 # Set the working directory
-WORKDIR $HOME
+WORKDIR $HOME/workspace
 
 # Start the VS Code server tunnel
 CMD [ "code", "tunnel", "--accept-server-license-terms" ]
